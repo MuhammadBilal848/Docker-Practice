@@ -43,3 +43,9 @@ sudo docker volume ls
 ```
 sudo docker network create network_name
 ```
+
+⦾ Share Docker Image
+```
+docker save -o my-image.tar my-image:latest
+```
+
