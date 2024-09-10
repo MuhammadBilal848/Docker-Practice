@@ -40,10 +40,22 @@ docker run -d -p (this port name could be the same or you can change it)port:por
 docker run -it -p (this port name could be the same or you can change it)port:port(should be same as defined in the DockerFile) image_id
 ```
 
-
 ⦾ Create and Run a Docker container using Image ID (this command automatically creates a Docker container using a Docker image and names it randomly)
 ```
 sudo docker run -it -p (this port name could be the same or you can change it)port:port(should be same as defined in the DockerFile) image_id
+```
+
+⦾ Making Changes in Files inside Docker Container (Container must be up and running)
+> Container must be up and running
+```
+1. docker exec -it container_name sh
+2. ls # list all the files
+3. apt-get update # update apt-get
+4. apt-get install vim # install vim, it helps in editing files
+5. vim file_name.extension
+6. Make changes
+7. 
+
 ```
 
 
