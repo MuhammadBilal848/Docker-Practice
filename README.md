@@ -55,7 +55,7 @@ sudo docker run -it -p (this port name could be the same or you can change it)po
 5. vim file_name.extension
 6. Make changes
 7. wq! # to save changes
-
+8. docker commit container_id new_image_name # container_id must be the container that you made changes in.
 ```
 
 
