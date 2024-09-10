@@ -43,7 +43,7 @@ docker run -it -p (this port name could be the same or you can change it)port:po
 
 ⦾ Create and Run a Docker container using Image ID (this command automatically creates a Docker container using a Docker image and names it randomly)
 ```
-sudo docker run -it image_name
+sudo docker run -it -p (this port name could be the same or you can change it)port:port(should be same as defined in the DockerFile) image_id
 ```
 
 
