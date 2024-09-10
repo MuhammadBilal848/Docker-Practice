@@ -37,7 +37,7 @@ docker run -d -p (this port name could be the same or you can change it)port:por
 
 ⦾ Create and run Docker container in detached mode (without -d) & change port.
 ```
-docker run -it -p (this port name could be the same or you can change it)port:port(should be same as defined in the DockerFile) yolov5image
+docker run -it -p (this port name could be the same or you can change it)port:port(should be same as defined in the DockerFile) image_id
 ```
 
 
