@@ -14,12 +14,24 @@ sudo docker ps -a
 ```
 sudo docker build -t image_name .
 ```
+
+⦾ Remove a docker image 
+```
+sudo docker rmi image_id
+```
+
+⦾ Remove a docker image forcefully 
+```
+sudo docker rmi image_id --force
+```
+
+
 ⦾ Run a Docker image (this command automatically creates a Docker container using Docker image and names it randomly)
 ```
 sudo docker run -it image_name
 ```
 
-
+remove imag
 
 
 ⦾ Run a Docker image and edit it (this command helps make changes in the Docker image and when we commit changes, docker makes a new image)
