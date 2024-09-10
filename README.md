@@ -21,6 +21,7 @@ sudo docker run -it image_name
 
 
 
+
 ⦾ Run a Docker image and edit it (this command helps make changes in the Docker image and when we commit changes, docker makes a new image)
 ```
 sudo docker run -it image_name sh
@@ -29,6 +30,11 @@ sudo docker run -it image_name sh
 ⦾ Stop a Docker container
 ```
 sudo docker stop container_id
+```
+
+⦾ Stop all Docker container
+```
+docker stop $(docker ps -a -q)
 ```
 
 ⦾ Remove a Docker container
