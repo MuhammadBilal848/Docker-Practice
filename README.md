@@ -54,7 +54,7 @@ sudo docker run -it -p (this port name could be the same or you can change it)po
 4. apt-get install vim # install vim, it helps in editing files
 5. vim file_name.extension
 6. Make changes
-7. 
+7. wq! # to save changes
 
 ```
 
