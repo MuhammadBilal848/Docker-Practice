@@ -25,6 +25,11 @@ sudo docker rmi image_id
 sudo docker rmi image_id --force
 ```
 
+⦾ Create Docker Container
+```
+sudo docker create --name any_name-container -p 8000:8000 image_name
+```
+
 ⦾ Create and run a Docker container using Image ID & Change Port
 ```
 docker run -d -p (this port name could be the same or you can change it)port:port(should be same as defined in the DockerFile) --name container_name image_id
