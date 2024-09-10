@@ -10,13 +10,20 @@ sudo docker images
 sudo docker ps -a
 ```
 
-⦾ Make a docker image
+⦾ Make a docker image 
 ```
 sudo docker build -t image_name .
 ```
-⦾ Run a Docker container
+⦾ Run a Docker image (this command automatically creates a Docker container using Docker image and names it randomly)
 ```
 sudo docker run -it image_name
+```
+
+
+
+⦾ Run a Docker image and edit it (this command helps make changes in the Docker image and when we commit changes, docker makes a new image)
+```
+sudo docker run -it image_name sh
 ```
 
 ⦾ Stop a Docker container
