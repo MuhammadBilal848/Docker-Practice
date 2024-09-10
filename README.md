@@ -33,7 +33,7 @@ docker run -d -p (this port name could be the same or you can change it)port:por
 
 
 
-⦾ Run a Docker image (this command automatically creates a Docker container using a Docker image and names it randomly)
+⦾ Create and Run a Docker container using Image ID (this command automatically creates a Docker container using a Docker image and names it randomly)
 ```
 sudo docker run -it image_name
 ```
