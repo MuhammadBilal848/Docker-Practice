@@ -84,6 +84,17 @@ sudo docker rm container_id
 sudo docker rmi image_name
 ```
 
+⦾ Create a Docker Image Tar File
+```
+docker save -o any_name.tar image_name:tag
+```
+
+⦾ Load a Tar File Docker Image
+```
+docker load < file_name.tar
+```
+
+
 ⦾ List all Docker volumes
 ```
 sudo docker volume ls
