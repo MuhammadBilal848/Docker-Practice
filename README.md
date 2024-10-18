@@ -55,6 +55,7 @@ sudo docker run -it -p (this port name could be the same or you can change it)po
 5. vim file_name.extension
 6. Press any alphabet to go into editing mode and make your respective changes in the file
 7. write ":wq!" and enter to save changes
+8. exit # to get out of exec mode
 8. docker commit container_id new_image_name # container_id must be the container that you made changes in.
 ```
 
@@ -108,5 +109,15 @@ sudo docker network create network_name
 ⦾ Share Docker Image
 ```
 docker save -o my-image.tar my-image:latest
+```
+
+
+⦾ Get Docker Container Data
+```
+1. docker exec -it container_name /bin/bash
+2. cd /app/your_output_directory
+3. ls
+4. exit
+5. docker cp swap:/app/output_directory/image.jpg /path/on/host/image.jpg
 ```
 
