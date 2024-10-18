@@ -53,8 +53,8 @@ sudo docker run -it -p (this port name could be the same or you can change it)po
 3. apt-get update # update apt-get
 4. apt-get install vim # install vim, it helps in editing files
 5. vim file_name.extension
-6. Make changes
-7. wq! # to save changes
+6. Press any alphabet to go into editing mode and make your respective changes in the file
+7. write ":wq!" and enter to save changes
 8. docker commit container_id new_image_name # container_id must be the container that you made changes in.
 ```
 
