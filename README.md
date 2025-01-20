@@ -15,16 +15,6 @@ sudo docker ps -a
 sudo docker build -t image_name .
 ```
 
-⦾ Remove a docker image 
-```
-sudo docker rmi image_id
-```
-
-⦾ Remove a docker image forcefully 
-```
-sudo docker rmi image_id --force
-```
-
 ⦾ Create Docker Container
 ```
 sudo docker create --name any_name-container -p 8000:8000 image_name
@@ -75,14 +65,19 @@ sudo docker stop container_id
 docker stop $(docker ps -a -q)
 ```
 
+⦾ Remove a docker image 
+```
+sudo docker rmi image_id
+```
+
+⦾ Remove a docker image forcefully 
+```
+sudo docker rmi image_id --force
+```
+
 ⦾ Remove a Docker container
 ```
 sudo docker rm container_id
-```
-
-⦾ Remove a Docker image
-```
-sudo docker rmi image_name
 ```
 
 ⦾ Create a Docker Image Tar File
