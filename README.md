@@ -20,6 +20,11 @@ sudo docker build -t image_name .
 sudo docker create --name any_name-container -p 8000:8000 image_name
 ```
 
+⦾ Start Docker Container
+```
+docker start container_name
+```
+
 ⦾ Create & Name and run a Docker container using Image ID & Change Port
 ```
 docker run -d -p (this port name could be the same or you can change it)port:port(should be same as defined in the DockerFile) --name container_name image_id
