@@ -111,7 +111,6 @@ sudo docker network create network_name
 docker save -o my-image.tar my-image:latest
 ```
 
-
 ⦾ Get Docker Container Data
 ```
 1. docker exec -it container_name /bin/bash
@@ -121,3 +120,12 @@ docker save -o my-image.tar my-image:latest
 5. docker cp swap:/app/output_directory/image.jpg /path/on/host/image.jpg
 ```
 
+⦾ Edit Docker Image
+> Docker images are immutable, but we can make a temporary container of that image and edit it.
+```
+1. docker run -it --name temp_container your_image /bin/sh
+2. make your changes using `vim`, `pip` etc.
+3. exit
+4. docker commit temp_container your_new_image:v2
+5. docker run --name your_new_container_name -p 8000:8000 your_new_image:v2 uvicorn app:app --host 0.0.0.0 --port 8000
+```
